@@ -29,10 +29,17 @@ public class Producto {
     private String nombre;
     private  double precio;
     private String descripcion;
-    private  boolean disponible;
+    private  Boolean disponible;
 
     public Producto(String descripcion, boolean disponible, String nombre, double precio) {
         this.idProducto = UUID.randomUUID();
+        this.descripcion = descripcion;
+        this.disponible = disponible;
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+    public Producto(UUID idProducto, String descripcion, boolean disponible, String nombre, double precio) {
+        this.idProducto= idProducto;
         this.descripcion = descripcion;
         this.disponible = disponible;
         this.nombre = nombre;

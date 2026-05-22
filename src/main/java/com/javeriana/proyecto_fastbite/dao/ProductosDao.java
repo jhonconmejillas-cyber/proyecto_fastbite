@@ -5,6 +5,7 @@ import com.javeriana.proyecto_fastbite.model.Producto;
 
 import java.io.*;
 import java.nio.file.*;
+import java.time.LocalDateTime;
 import java.util.*;
 
 public class ProductosDao {
@@ -27,9 +28,17 @@ public class ProductosDao {
             while((linea = br.readLine()) != null) {
 
                 String[] datos = linea.split(",");
+                UUID idproducto = UUID.fromString(datos[0]);
+
+                String nombre = datos[1];
+
+                double precio = Double.parseDouble(datos[2]);
+
+                String descripcion = datos[4];
+                Boolean disponible = Boolean.parseBoolean(datos[5]);
 
                 Producto producto =
-                        new Producto();
+                        new Producto(idproducto,descripcion,disponible,nombre,precio);
 
                 productos.add(producto);
 

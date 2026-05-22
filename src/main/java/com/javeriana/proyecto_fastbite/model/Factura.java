@@ -6,13 +6,13 @@ import java.util.UUID;
 public class Factura {
     private UUID idFactura;
     private LocalDateTime fechaEmision;
-    private double subtotal ;
+    private double subtotal;
     private double iva;
     private double total;
     private String metodoPago;
 
     public Factura(LocalDateTime fechaEmision, UUID idFactura, double iva, String metodoPago, double subtotal, double total) {
-        this.idFactura  = UUID.randomUUID();
+        this.idFactura = idFactura;
         this.fechaEmision = fechaEmision;
         this.idFactura = idFactura;
         this.iva = iva;
@@ -20,6 +20,20 @@ public class Factura {
         this.subtotal = subtotal;
         this.total = total;
     }
+
+    public Factura(LocalDateTime fechaEmision, double iva, String metodoPago, double subtotal ,double total) {
+
+        this.idFactura = UUID.randomUUID();
+
+        this.fechaEmision = fechaEmision;
+
+        this.subtotal = subtotal;
+
+        this.iva = iva;
+
+        this.total = total;
+
+        this.metodoPago = metodoPago;
     /*
      + crearFactura(pedido: Pedido, metodoPago: String) : void
     + calcularIVA(subtotal: double) : double
@@ -27,6 +41,9 @@ public class Factura {
     + anularFactura() : void
 
      */
+
+
+    }
 
     public LocalDateTime getFechaEmision() {
         return fechaEmision;
@@ -56,6 +73,10 @@ public class Factura {
         this.fechaEmision = fechaEmision;
     }
 
+    public void setIdFactura(UUID idFactura) {
+        this.idFactura = idFactura;
+    }
+
     public void setIva(double iva) {
         this.iva = iva;
     }
@@ -72,5 +93,7 @@ public class Factura {
         this.total = total;
     }
 }
+
+
 
 

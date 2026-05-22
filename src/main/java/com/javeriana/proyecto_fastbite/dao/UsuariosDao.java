@@ -1,5 +1,8 @@
 package com.javeriana.proyecto_fastbite.dao;
 
+import com.javeriana.proyecto_fastbite.model.Administrador;
+import com.javeriana.proyecto_fastbite.model.Cajero;
+import com.javeriana.proyecto_fastbite.model.Cocinero;
 import com.javeriana.proyecto_fastbite.model.Usuario;
 
 import java.io.*;
@@ -41,15 +44,15 @@ public class UsuariosDao {
 
                 if(rol.equals("ADMINISTRADOR")) {
 
-                    u = new Administrador();
+                    u = new Administrador(id,nombre,rol,contrasena);
 
                 } else if(rol.equals("CAJERO")) {
 
-                    u = new Cajero();
+                    u = new Cajero(contrasena,id,nombre,rol);
 
                 } else if(rol.equals("COCINERO")) {
 
-                    u = new Cocinero();
+                    u = new Cocinero(contrasena,id,nombre,rol);
 
                 }
 
@@ -77,9 +80,9 @@ public class UsuariosDao {
             String linea =
                     usuario.getIdUsuario() + "," +
                             usuario.getNombre() + "," +
-                            usuario.getUsuario() + "," +
+                            usuario.getUsuarioType() + "," +
                             usuario.getContrasena() + "," +
-                            usuario.getRol();
+                            usuario.getUsuarioType();
 
             bw.newLine();
 

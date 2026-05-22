@@ -5,6 +5,7 @@ import com.javeriana.proyecto_fastbite.model.Pedido;
 
 import java.io.*;
 import java.nio.file.*;
+import java.time.LocalDateTime;
 import java.util.*;
 
 public class PedidosDao {
@@ -28,8 +29,17 @@ public class PedidosDao {
 
                 String[] datos = linea.split(",");
 
+                 UUID idPedido = UUID.fromString(datos[0]);
+                 LocalDateTime fechaHora = LocalDateTime.parse(datos[1]);;
+                 String estado = datos[3];
+                 double subtotal = Double.parseDouble(datos[4]);;
+                 double iva = Double.parseDouble(datos[5]);;
+                 double total = Double.parseDouble(datos[6]);;
+                 UUID cliente = UUID.fromString(datos[7]);
+                 UUID factura = UUID.fromString(datos[8]);;
+
                 Pedido pedido =
-                        new Pedido();
+                        new Pedido(estado,fechaHora,idPedido,iva,subtotal,total);
 
                 pedidos.add(pedido);
 
@@ -59,8 +69,8 @@ public class PedidosDao {
                             pedido.getSubtotal() + "," +
                             pedido.getIva() + "," +
                             pedido.getTotal() + "," +
-                            pedido.getCliente().getIdCliente() + "," +
-                            pedido.getFactura().getIdFactura();
+                            pedido.getIdCliente() + "," +
+                            pedido.getIdfactura();
 
             bw.newLine();
 
