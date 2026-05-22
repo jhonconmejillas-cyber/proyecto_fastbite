@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.AdminProductosController">
+
+    <Label text="GESTION PRODUCTOS"/>
+
+    <TableView fx:id="tableProductos"/>
+
+    <TextField fx:id="txtNombre"
+               promptText="Nombre"/>
+
+    <TextField fx:id="txtPrecio"
+               promptText="Precio"/>
+
+    <Button text="Crear"
+            onAction="#crearProducto"/>
+
+    <Button text="Editar"
+            onAction="#editarProducto"/>
+
+    <Button text="Eliminar"
+            onAction="#eliminarProducto"/>
+
+</VBox>

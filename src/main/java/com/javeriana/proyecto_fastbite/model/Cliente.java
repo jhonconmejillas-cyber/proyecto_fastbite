@@ -1,5 +1,6 @@
 package com.javeriana.proyecto_fastbite.model;
 
+import java.util.List;
 import java.util.UUID;
 
 public class Cliente {
@@ -8,6 +9,8 @@ public class Cliente {
     private  String email;
     private String telefono;
     private  int saldoPuntos;
+    private List<Pedido> pedidos;
+    private CuentaPuntos cuentaPuntos;
 
     public Cliente(String email, int idCliente, String nombre, int saldoPuntos, String telefono) {
         this.idCliente = UUID.randomUUID();

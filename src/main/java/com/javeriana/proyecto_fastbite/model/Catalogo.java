@@ -1,13 +1,14 @@
 package com.javeriana.proyecto_fastbite.model;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 public class Catalogo {
     private UUID idCatalogo;
-    private ArrayList<Producto> listaProductos;
+    private List<Producto> listaProductos;
 
-    public Catalogo(ArrayList<Producto> listaProductos) {
+    public Catalogo(List<Producto> listaProductos) {
         this.idCatalogo = UUID.randomUUID();
         this.listaProductos = listaProductos;
     }
@@ -28,14 +29,14 @@ public class Catalogo {
         return idCatalogo;
     }
 
-    public ArrayList<Producto> getListaProductos() {
+    public List<Producto> getListaProductos() {
         return listaProductos;
     }
     public void setIdCatalogo(UUID idCatalogo) {
         this.idCatalogo = idCatalogo;
     }
 
-    public void setListaProductos(ArrayList<Producto> listaProductos) {
+    public void setListaProductos(List<Producto> listaProductos) {
         this.listaProductos = listaProductos;
     }
 }

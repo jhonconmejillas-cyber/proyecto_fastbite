@@ -1,0 +1,11 @@
+idUsuario,nombre,usuario,contrasena,rol
+550e8400-e29b-41d4-a716-446655440001,Carlos Ramirez,admincarlos,admin123,ADMINISTRADOR
+550e8400-e29b-41d4-a716-446655440002,Laura Gomez,lauradmin,clave456,ADMINISTRADOR
+660e8400-e29b-41d4-a716-446655440001,Jhon Mejia,jhoncajero,1234,CAJERO
+660e8400-e29b-41d4-a716-446655440002,Luisa Fernandez,luisacaj,abcd,CAJERO
+770e8400-e29b-41d4-a716-446655440001,Oscar Medina,oscarcook,cook1,COCINERO
+770e8400-e29b-41d4-a716-446655440002,Lina Torres,linacook,cook2,COCINERO
+660e8400-e29b-41d4-a716-446655440003,Pedro Sanchez,pedrocajero,pass1,CAJERO
+770e8400-e29b-41d4-a716-446655440003,Felipe Gomez,felipecook,cook3,COCINERO
+550e8400-e29b-41d4-a716-446655440003,Sebastian Ruiz,sebasadmin,pass789,ADMINISTRADOR
+660e8400-e29b-41d4-a716-446655440004,Sandra Mora,sandracaj,pass2,CAJERO

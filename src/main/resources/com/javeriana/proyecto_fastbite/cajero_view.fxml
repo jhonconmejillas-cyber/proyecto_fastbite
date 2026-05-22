@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.CajeroController">
+
+    <left>
+        <VBox spacing="10">
+
+            <Label text="MENU"/>
+
+            <ListView fx:id="listProductos"/>
+
+            <Button text="Agregar"
+                    onAction="#agregarProducto"/>
+
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="10">
+
+            <Label text="PEDIDO"/>
+
+            <TableView fx:id="tablePedido"/>
+
+            <Label fx:id="lblSubtotal"
+                   text="Subtotal: 0"/>
+
+            <Label fx:id="lblIVA"
+                   text="IVA: 0"/>
+
+            <Label fx:id="lblTotal"
+                   text="Total: 0"/>
+
+            <ComboBox fx:id="comboPago"/>
+
+            <Button text="Confirmar Pedido"
+                    onAction="#confirmarPedido"/>
+
+        </VBox>
+    </center>
+
+</BorderPane>

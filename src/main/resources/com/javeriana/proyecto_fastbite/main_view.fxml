@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.MainController">
+
+    <!-- TOP -->
+    <top>
+        <HBox spacing="10">
+
+            <Button text="Login"
+                    onAction="#abrirLogin"/>
+
+            <Button text="Cajero"
+                    onAction="#abrirCajero"/>
+
+            <Button text="Cocina"
+                    onAction="#abrirCocina"/>
+
+            <Button text="Inventario"
+                    onAction="#abrirInventario"/>
+
+            <Button text="Productos"
+                    onAction="#abrirProductos"/>
+
+            <Button text="Reportes"
+                    onAction="#abrirReportes"/>
+
+        </HBox>
+    </top>
+
+    <!-- CENTRO -->
+    <center>
+
+        <StackPane fx:id="contenedorPrincipal">
+
+            <Label text="FASTBITE"/>
+
+        </StackPane>
+
+    </center>
+
+</BorderPane>

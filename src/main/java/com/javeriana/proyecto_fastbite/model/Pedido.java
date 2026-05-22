@@ -10,6 +10,9 @@ public class Pedido {
     private double subtotal;
     private double iva;
     private double total;
+    private Cliente cliente;
+    private Factura factura;
+
 
 
     public Pedido(String estado, LocalDateTime fechaHora, UUID idPedido, double iva, double subtotal, double total) {

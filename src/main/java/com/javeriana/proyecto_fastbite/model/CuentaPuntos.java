@@ -6,11 +6,9 @@ import java.util.UUID;
 public class CuentaPuntos {
     private UUID idCuenta;
     private int  saldoActual;
-    ArrayList <Integer> historialMovimientos;
 
-    public CuentaPuntos(ArrayList<Integer> historialMovimientos, UUID idCuenta, int saldoActual) {
+    public CuentaPuntos( UUID idCuenta, int saldoActual) {
         this.idCuenta = UUID.randomUUID();
-        this.historialMovimientos = historialMovimientos;
         this.idCuenta = idCuenta;
         this.saldoActual = saldoActual;
     }
@@ -22,9 +20,7 @@ public class CuentaPuntos {
     + obtenerHistorial(idCliente: int) : List
      */
 
-    public ArrayList<Integer> getHistorialMovimientos() {
-        return historialMovimientos;
-    }
+
 
     public UUID getIdCuenta() {
         return idCuenta;
@@ -34,11 +30,12 @@ public class CuentaPuntos {
         return saldoActual;
     }
 
-    public void setHistorialMovimientos(ArrayList<Integer> historialMovimientos) {
-        this.historialMovimientos = historialMovimientos;
-    }
 
     public void setSaldoActual(int saldoActual) {
         this.saldoActual = saldoActual;
+    }
+
+    public void setIdCuenta(UUID idCuenta) {
+        this.idCuenta = idCuenta;
     }
 }

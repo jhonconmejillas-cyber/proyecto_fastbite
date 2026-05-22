@@ -1,0 +1,11 @@
+idProducto,nombre,precio,descripcion,disponible
+880e8400-e29b-41d4-a716-446655440001,Hamburguesa Clasica,18000,Hamburguesa con carne y queso,true
+880e8400-e29b-41d4-a716-446655440002,Papas Grandes,7000,Papas fritas grandes,true
+880e8400-e29b-41d4-a716-446655440003,Gaseosa Cola,5000,Bebida 400ml,true
+880e8400-e29b-41d4-a716-446655440004,Perro Caliente,12000,Perro con salsa especial,true
+880e8400-e29b-41d4-a716-446655440005,Nuggets,15000,10 nuggets de pollo,true
+880e8400-e29b-41d4-a716-446655440006,Combo Familiar,45000,4 hamburguesas y papas,true
+880e8400-e29b-41d4-a716-446655440007,Malteada Chocolate,9000,Malteada grande,true
+880e8400-e29b-41d4-a716-446655440008,Ensalada Cesar,14000,Ensalada con pollo,true
+880e8400-e29b-41d4-a716-446655440009,Helado Vainilla,6000,Helado sencillo,false
+880e8400-e29b-41d4-a716-446655440010,Wrap Pollo,16000,Wrap con vegetales,true

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.LoginController">
+
+    <Label text="INICIAR SESION"/>
+
+    <TextField fx:id="txtUsuario"
+               promptText="Usuario"/>
+
+    <PasswordField fx:id="txtPassword"
+                   promptText="Contraseña"/>
+
+    <Button text="Ingresar"
+            onAction="#iniciarSesion"/>
+
+    <Label fx:id="lblMensaje"/>
+
+</VBox>
