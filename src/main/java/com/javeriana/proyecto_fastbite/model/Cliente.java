@@ -12,7 +12,14 @@ public class Cliente {
     private List<Pedido> pedidos;
     private CuentaPuntos cuentaPuntos;
 
-    public Cliente(String email, int idCliente, String nombre, int saldoPuntos, String telefono) {
+    public Cliente(String email, UUID idCliente, String nombre, int saldoPuntos, String telefono) {
+        this.idCliente = idCliente;
+        this.email = email;
+        this.nombre = nombre;
+        this.saldoPuntos = saldoPuntos;
+        this.telefono = telefono;
+    }
+    public Cliente(String email,String nombre, int saldoPuntos, String telefono) {
         this.idCliente = UUID.randomUUID();
         this.email = email;
         this.nombre = nombre;

@@ -43,7 +43,7 @@ public class CuentaPuntosDao {
                         Integer.parseInt(datos[1]);
 
                 CuentaPuntos cuenta =
-                        new CuentaPuntos();
+                        new CuentaPuntos(idCuenta,saldoActual);
 
                 cuenta.setIdCuenta(idCuenta);
 

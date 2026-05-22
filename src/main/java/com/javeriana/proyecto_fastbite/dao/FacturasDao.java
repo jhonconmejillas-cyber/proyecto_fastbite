@@ -2,7 +2,7 @@ package com.javeriana.proyecto_fastbite.dao;
 
 
 
-import model.Factura;
+import com.javeriana.proyecto_fastbite.model.Factura;
 
 import java.io.*;
 import java.nio.file.*;
@@ -15,8 +15,7 @@ public class FacturasDao {
 
     public List<Factura> leerFacturas() {
 
-        List<Factura> facturas =
-                new ArrayList<>();
+        List<Factura> facturas = new ArrayList<>();
 
         return facturas;
 

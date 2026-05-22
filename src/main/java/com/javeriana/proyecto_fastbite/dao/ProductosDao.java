@@ -1,7 +1,7 @@
 package com.javeriana.proyecto_fastbite.dao;
 
 
-import model.Producto;
+import com.javeriana.proyecto_fastbite.model.Producto;
 
 import java.io.*;
 import java.nio.file.*;

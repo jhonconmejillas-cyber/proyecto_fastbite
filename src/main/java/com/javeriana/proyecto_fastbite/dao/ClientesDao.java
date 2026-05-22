@@ -1,5 +1,5 @@
 package com.javeriana.proyecto_fastbite.dao;
-
+import com.javeriana.proyecto_fastbite.model.Cliente;
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
@@ -38,7 +38,7 @@ public class ClientesDao {
                         Integer.parseInt(datos[4]);
 
                 Cliente cliente =
-                        new Cliente();
+                        new Cliente(email,id,nombre,puntos,telefono);
 
                 clientes.add(cliente);
 

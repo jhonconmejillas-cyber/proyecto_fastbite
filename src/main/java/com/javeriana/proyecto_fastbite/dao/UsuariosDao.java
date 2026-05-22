@@ -1,7 +1,6 @@
 package com.javeriana.proyecto_fastbite.dao;
 
-import model.*;
-import model.enums.RolUsuario;
+import com.javeriana.proyecto_fastbite.model.Usuario;
 
 import java.io.*;
 import java.nio.file.*;
